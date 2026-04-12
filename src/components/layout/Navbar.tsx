@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { Coffee, ShoppingBag } from "lucide-react";
+import { ShoppingBag } from "lucide-react";
 import { useCart } from "@/context/CartContext";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import { usePathname } from "next/navigation";

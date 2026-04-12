@@ -36,7 +36,7 @@ export default function MenuPage() {
           {categories.map((cat) => (
             <button
               key={cat}
-              onClick={() => setActiveCategory(cat as any)}
+              onClick={() => setActiveCategory(cat as "All" | "Coffee" | "Non-Coffee" | "Food")}
               className={`whitespace-nowrap rounded-xl px-4 py-2 text-sm font-medium transition-all ${
                 activeCategory === cat
                   ? "bg-primary text-primary-foreground shadow-md"
@@ -50,7 +50,7 @@ export default function MenuPage() {
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         <AnimatePresence mode="popLayout">
-          {filteredProducts.map((product, index) => (
+          {filteredProducts.map((product) => (
             <motion.div
               layout
               key={product.id}

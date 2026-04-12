@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Coffee, ShieldCheck, Sparkles, Dices, RefreshCw, Star } from "lucide-react";
+import { ArrowRight, Coffee, Sparkles, Dices, RefreshCw, Star } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { products, Product } from "@/data/products";
 import { ProductCard } from "@/components/ui/ProductCard";

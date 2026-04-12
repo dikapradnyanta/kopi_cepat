@@ -33,7 +33,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
     if (savedCart) {
       try {
         setCart(JSON.parse(savedCart));
-      } catch (err) {
+      } catch {
       }
     }
     setIsLoaded(true);

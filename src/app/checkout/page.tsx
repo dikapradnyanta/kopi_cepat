@@ -6,7 +6,7 @@ import { useCart } from "@/context/CartContext";
 import { formatCurrency } from "@/lib/utils";
 import { ArrowLeft, CheckCircle2, ChevronRight, CreditCard, Loader2, QrCode, Wallet } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import Image from "next/image";
+
 type PaymentMethod = "Cash" | "QRIS" | "Transfer Bank";
 export default function CheckoutPage() {
   const router = useRouter();

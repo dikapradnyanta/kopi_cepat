@@ -242,7 +242,7 @@ export default function ProductDetail() {
                     ))}
                   </div>
                 </div>
-                <p className="text-sm text-foreground leading-relaxed">"{rv.text}"</p>
+                <p className="text-sm text-foreground leading-relaxed">&ldquo;{rv.text}&rdquo;</p>
               </motion.div>
             ))}
           </AnimatePresence>
