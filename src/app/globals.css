@@ -2,26 +2,75 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: 163 20% 98%; /* Putih Kemerahan ke Hijau / Mint Terang */
+    --foreground: 163 50% 10%; /* Hijau Sangat Gelap / Hampir Hitam */
+
+    --card: 0 0% 100%; /* Putih */
+    --card-foreground: 163 50% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 163 50% 10%;
+
+    --primary: 163 100% 25%; /* Emerald Green #00805B */
+    --primary-foreground: 0 0% 100%; /* Putih */
+
+    --secondary: 163 20% 90%; /* Mint Lembut */
+    --secondary-foreground: 163 100% 20%; /* Hijau Gelap */
+
+    --muted: 163 15% 92%;
+    --muted-foreground: 163 15% 45%;
+
+    --accent: 40 90% 55%; /* Warm Gold sebagai Aksen yang kontras dan cantik */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 163 20% 88%;
+    --input: 163 20% 88%;
+    --ring: 163 100% 25%;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 163 50% 5%; /* Hijau Sangat Gelap */
+    --foreground: 163 20% 90%; /* Sage Terang */
+
+    --card: 163 40% 8%; /* Hijau Gelap */
+    --card-foreground: 163 20% 90%;
+
+    --popover: 163 40% 8%;
+    --popover-foreground: 163 20% 90%;
+
+    --primary: 163 60% 45%; /* Hijau Emerald Terang untuk Dark Mode */
+    --primary-foreground: 163 50% 5%;
+
+    --secondary: 163 30% 15%;
+    --secondary-foreground: 163 20% 90%;
+
+    --muted: 163 30% 15%;
+    --muted-foreground: 163 20% 65%;
+
+    --accent: 40 90% 55%;
+    --accent-foreground: 163 50% 5%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 163 30% 15%;
+    --input: 163 30% 15%;
+    --ring: 163 60% 45%;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
   }
 }
