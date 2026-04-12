@@ -11,7 +11,7 @@ export default function CartPage() {
   const total = subTotal + tax;
   if (cartCount === 0) {
     return (
-      <div className="flex flex-col items-center justify-center min-h-[60vh] gap-6 text-center">
+      <div className="flex flex-col items-center justify-center min-h-[60vh] gap-6 text-center px-4">
         <div className="p-6 bg-secondary rounded-full text-muted-foreground mb-4">
           <ShoppingBag className="h-16 w-16" />
         </div>
@@ -29,7 +29,7 @@ export default function CartPage() {
     );
   }
   return (
-    <div className="py-8 md:py-12">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
       <div className="flex items-center gap-4 mb-8">
         <Link href="/menu" className="p-2 -ml-2 text-muted-foreground hover:bg-secondary rounded-full transition-colors">
           <ArrowLeft className="h-5 w-5" />

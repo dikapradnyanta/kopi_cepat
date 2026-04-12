@@ -75,7 +75,7 @@ export default function ProductDetail() {
     : "0.0";
 
   return (
-    <div className="py-8 md:py-16">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-16">
       <Link href="/menu" className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-primary mb-8 transition-colors">
         <ArrowLeft className="h-4 w-4" />
         Kembali ke Menu

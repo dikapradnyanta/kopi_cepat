@@ -54,7 +54,7 @@ export default function CheckoutPage() {
     return null; 
   }
   return (
-    <div className="py-8 md:py-12 relative">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12 relative">
       <div className="flex items-center gap-4 mb-8">
         <Link href="/cart" className="p-2 -ml-2 text-muted-foreground hover:bg-secondary rounded-full transition-colors">
           <ArrowLeft className="h-5 w-5" />

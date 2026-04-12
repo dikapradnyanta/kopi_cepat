@@ -14,7 +14,7 @@ export default function MenuPage() {
   });
   const categories = ["All", "Coffee", "Non-Coffee", "Food"];
   return (
-    <div className="flex flex-col gap-8 py-8 md:py-12 min-h-[80vh]">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-8 py-8 md:py-12 min-h-[80vh]">
       <div className="flex flex-col gap-2">
         <h1 className="text-4xl font-bold tracking-tight">Eksplorasi Rasa</h1>
         <p className="text-muted-foreground text-lg">Temukan menu favorit yang pas untuk menemanimu hari ini.</p>
