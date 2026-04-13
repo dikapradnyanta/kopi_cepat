@@ -150,7 +150,7 @@ export default function Home() {
             >
               {Array.from({ length: 20 }).map((_, i) => (
                 <span key={i} className="text-primary-foreground font-black tracking-widest text-lg mx-6 shrink-0 whitespace-nowrap">
-                  &bull; KOPI CEPAT &bull; DISKON 20%
+                  &bull; KOPI CEPAT &bull; DISKON 30%
                 </span>
               ))}
             </motion.div>
